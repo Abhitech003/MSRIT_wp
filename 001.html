@@ -1,0 +1,57 @@
+<html>
+    <head>
+        <title>
+            abhi docs
+        </title>
+    </head>
+    <body>
+        <p id="text">calculator</p>
+        <label for="">number 1:</label>
+        <input type="number" id="num1">
+        <br>
+        <label for="">number 2:</label>
+        <input type="number" id="num2">
+        <br>
+        <button onclick="add()">add</button>
+        <button onclick="sub()">sub</button>
+        <button onclick="mul()">mul</button>
+        <button onclick="div()">dib</button>
+        <p id="result">result<span id="resultid"></span></p>
+        <script>
+           function add()
+           {
+            let num1=parseFloat(document.getElementById("num1").value);
+            let num2=parseFloat(document.getElementById("num2").value);
+            let add=num1+num2;
+            console.log("addition :"+add);
+            document.getElementById("resultid").textContent=add;
+           }
+           function sub()
+           {
+            let num1=parseFloat(document.getElementById("num1").value);
+            let num2=parseFloat(document.getElementById("num2").value);
+            let sub=num1-num2;
+            console.log("substraction :"+sub);
+            document.getElementById("resultid").textContent=sub;
+           }
+           function mul()
+           {
+            let num1=parseFloat(document.getElementById("num1").value);
+            let num2=parseFloat(document.getElementById("num2").value);
+            let mul=num1*num2;
+            console.log("multiplication :"+mul);
+            document.getElementById("resultid").textContent=mul;
+           }
+           function div()
+           {
+            let num1=parseFloat(document.getElementById("num1").value);
+            let num2=parseFloat(document.getElementById("num2").value);
+            let div=num1/num2;
+            console.log("division :"+div);
+            document.getElementById("resultid").textContent=div;
+            return div;
+           }
+           
+        </script>
+    </body>
+</html>
